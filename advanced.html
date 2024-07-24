@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="text">
+    <div class="container">
+        <form action="https://www.google.com/search" method="get">
+            <label>
+                Find pages with… “all these words:”
+                <input type="text" name="allintext">
+            </label>
+            <label>
+                Find pages with… “this exact word or phrase:”
+                <input type="text" name="q">
+            </label>
+            <label>
+                Find pages with… “any of these words:”
+                <input type="text" name="q">
+            </label>
+            <label>
+                Find pages with… “none of these words:”
+                <input type="text" name="q">
+            </label>
+            <input type="submit" value="Advanced Search" style="background-color: blue; color: white;">
+        </form>
+        <div class="links">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+        </div>
+    </div>
 </body>
 </html>
